@@ -1,11 +1,8 @@
-import React, {
-    FC,
-} from 'react';
+import React from 'react';
 import { Box } from '@chakra-ui/react';
-import {CurrencyConverterTab} from '../modules/currencyConverter/components/currencyConverterTab';
+import {CurrencyConverterTab} from './components/currencyConverterTab';
 
-const App: FC = () => {
-
+export const CurrencyConverter = () => {
     return (
         <Box
             w="100%"
@@ -17,5 +14,4 @@ const App: FC = () => {
             <CurrencyConverterTab />
         </Box>
     );
-}
-export default (App);
+};
